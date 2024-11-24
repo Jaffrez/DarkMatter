@@ -12,4 +12,6 @@ function M.setup_options()
     require("darkmatter.core.options")
 end
 
+M.lazy_config = require("darkmatter.core.lazy")
+
 return M
