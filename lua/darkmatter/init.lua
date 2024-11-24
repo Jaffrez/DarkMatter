@@ -1,8 +1,8 @@
-local dm = require("darkmatter.core")
+_G.dm = require("darkmatter.core")
 local utils = require("darkmatter.utils")
 
-dm.setup_neovide()
-dm.setup_keymaps()
-dm.setup_options()
+dm.setup.neovide()
+dm.setup.keymaps()
+dm.setup.options()
 
-require("darkmatter.lazy").setup("plugins", dm.lazy_config)
+require("darkmatter.lazy").setup("darkmatter.plugins", dm.config.lazy)

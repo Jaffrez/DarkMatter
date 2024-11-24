@@ -1,17 +1,21 @@
-local M = {}
+local M = {
+    setup = {},
+    config = {},
+}
 
-function M.setup_neovide()
+function M.setup.neovide()
     require("darkmatter.core.neovide")
 end
 
-function M.setup_keymaps()
+function M.setup.keymaps()
     require("darkmatter.core.keymaps")
 end
 
-function M.setup_options()
+function M.setup.options()
     require("darkmatter.core.options")
 end
 
-M.lazy_config = require("darkmatter.core.lazy")
+M.config.lazy = require("darkmatter.core.lazy")
+M.config.icons = require("darkmatter.core.icons")
 
 return M
